@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html lang = 'En'>
+<link rel ="stylesheet" href= "Styles.css" />
+
+<head>
+  <title>Master Of Games</title>
+
+</head>
+
+<body>
+
+  <script src = "jsCode.js"></script>
+<table>
+<tr>
+<td colspan = 2>Import Picture, Report a problem
+<div class="container">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="dropdown()">Battlemats</button>
+    <div class="dropdown-content" id="bMDrop">
+      <a href="#">Select a Map</a>
+      <a href="#">Import a Map</a>
+    </div>
+  </div>
+</div></td>
+
+<td>Dice Roller... Press the Button</td>
+</tr>
+<tr>
+<td>Token Generation</td>
+<td><canvas id="myCanvas" width="800" height="700"></canvas>
+Main Picture/ Gameplay Area</td>
+<td >
+ <textarea id="textArea"></textarea><br>
+Press Enter to Send
+<form action="#">
+    <input id = "tBox" type="text" name="txt" onkeypress="handle(event)" />
+</form>
+</td>
+</tr>
+</table>
+<p>This is a test of the website.</p>
+</body>
+
+</html>
