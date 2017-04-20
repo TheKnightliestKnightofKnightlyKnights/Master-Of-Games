@@ -10,6 +10,10 @@ function send(){
   textBox.value= textBox.value + text;
 }
 
+function importmap(){
+  alert("Yay, it works!")
+}
+
     function handle(e){
         if(e.keyCode === 13){
             e.preventDefault(); // Ensure it is only this code that rusn
