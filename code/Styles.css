@@ -1,8 +1,29 @@
-   table, td, th { border: 1px solid gray;}
+   table, td, th { border: 2px solid gray;}
    table{
     border: thin solid black;
     border-collapse: collapse;
   }
+  .token{
+
+  width: 15vw;
+  height: 80vh;
+  }
+
+  canvas{
+    height:80vh;
+    width:65vw;
+  }
+
+  html, body{
+  width:100vw;
+  height: 100vh;
+  margin:0;
+  padding: 0;
+  background-image: url("../Assets/Backgrounds/paper.jpg");
+
+
+  }
+
   .container {
     overflow: hidden;
     background-color: #333;
@@ -72,5 +93,22 @@
 }
 
 textarea {
-height: 250 px;
+height: 80vh;
+width: 20vw;
+}
+
+.diceN{
+  width: 25 px;
+}
+
+.diceS{
+  width: 25 px;
+}
+
+ul li ul {
+  display: none;
+}
+
+ul li:hover ul {
+  display: block;
 }
