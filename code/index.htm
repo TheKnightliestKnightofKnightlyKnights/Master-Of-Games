@@ -19,24 +19,24 @@
 
 <table>
 <tr>
-<td colspan = "2">Import Picture, Report a problem
+<td colspan = "2">
 <div class="container">
   <div class="dropdown">
     <button class="dropbtn" onclick="dropdown()">Battlemats</button>
     <div class="dropdown-content" id="bMDrop">
-      <a href="#" onclick = "selectMap()">Select a Map</a>
       <a href="#" onclick="performClick('theFile');">Open file dialog</a>
-      <input type="file" id="theFile" />                                                                                                                   p</a>
+      <label>Select a Map</label><label></label><input onclick="selectMap()" type="file" id="theFile" />
 
+  </div>
   </div>
   </div>
 </td>
 
 <td>
-Profieciency bonus<input type="Text" name="quantity" size="5" id = "prof" value = '2' /> <br />
-Attribute Bonus(Str,Int)<input type="Text" name="quantity" size="5" id = "attriBonus" value = '0' /> <br />
-Number of Dice<input type="Text" name="diceN" size="5" id = "diceN" value = '1' /> <br />
-Maximum Sides(4,6,8,ect)<input type="Text" name="diceS" size="5" id = "diceS" value = '6' /> <br />
+<label>Profieciency bonus</label><input type="Text" name="quantity" size="5" id = "prof" value = '2' /> <br />
+<label>Attribute Bonus</label>(Str,Int)<input type="Text" name="quantity" size="5" id = "attriBonus" value = '0' /> <br />
+<label>Number of Dice</label><input type="Text" name="diceN" size="5" id = "diceN" value = '1' /> <br />
+<label>Maximum Sides(4,6,8,ect)</label><input type="Text" name="diceS" size="5" id = "diceS" value = '6' /> <br />
 
 <button onclick="diceRoll20()">Roll the D20</button>
 <button onclick = "diceRoll()">Roll the Dice</button>
@@ -54,6 +54,7 @@ Press Enter to Send
 <form action="#">
     <input id = "tBox" type="text" name="txt" onkeypress="handle(event)" />
 </form>
+<button onclick="deleteChat(textArea)">Delete the Chat</button>
 </td>
 </tr>
 </table>
