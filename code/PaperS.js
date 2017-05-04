@@ -1,6 +1,12 @@
     function tokenGenerate() {
-      alert('IOt works');
+      alert('It starts');
       var img = document.getElementById('tokenFile');
-    var raster = new Raster('img');
+    var layer = new paper.Layer();
+        var raster = new paper.Raster(img);
+
+        // End Layers
+
+        var secondLayer = new paper.Layer();
+        secondLayer.activate();
     raster.position=view.center;
 }

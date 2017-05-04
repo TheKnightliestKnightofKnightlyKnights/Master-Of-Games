@@ -50,15 +50,15 @@ function handle(e){
         }
     }
 
-//Rolls a D20, needs 0's
+//Rolls a D20
 function diceRoll20(){
   var profi = parseFloat(document.getElementById("prof").value);
   var attrBonus = parseFloat(document.getElementById("attriBonus").value);
-  if(isNaN(attrBonus)){
+  if(isNaN(attrBonus)){ //If no number is present, adds 0's
   attrBonus=0;
   alert("Please enter a number into Attribute Bonus: Is 0 for now");
   }
-  if(isNaN(profi))
+  if(isNaN(profi))//If no number is present, adds 0's
   {
     profi=0;
     alert("Please enter a number into Proficiency Bonus: Is 0 for now");
@@ -86,6 +86,18 @@ function diceRoll(){
   var attrBonus = parseFloat(document.getElementById("attriBonus").value);
   var numDice = parseFloat(document.getElementById("diceN").value);
   var numSides = parseFloat(document.getElementById("diceS").value);
+  if(isNaN(attrBonus)){ //If no number is present, adds 0's
+  attrBonus=0;
+  alert("Please enter a number into Attribute Bonus: Is 0 for now");
+  }
+  if(isNaN(numDice)){ //If no number is present, adds 0's
+  numDice=0;
+  alert("Please enter a number into Number of Dice: Is 0 for now");
+  }
+  if(isNaN(numSides)){ //If no number is present, adds 0's
+  numSides=0;
+  alert("Please enter a number into Number of Sides: Is 0 for now");
+  }
   var finalDice = 0;
   for(i=0;i<numDice;i++)
   {
